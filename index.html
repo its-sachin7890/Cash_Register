@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Cash Register Manager</h1>
+        <p class="header_para">Enter the bill amount and cash given by customer and know the minimum number of notes to return.</p>
+    </div>
+
+
+    <div class="main">
+        <div class="main_img">
+            <img src="./images/donald_cash.gif" alt="cashGif" id="donald_img" />
+        </div>
+       
+        <div class="main_form">
+            <form class="cash">
+                <label for="bill_amount" class="cash_amount">Bill Amount:</label>
+                <input type="number" id="bill_amount" name="bill_amount" placeholder="Enter the bill amount" /><br>
+        
+                <label for="cash_given" id="hide_cash_given" class="cash_amount">Cash Given:</label>
+                <input type="number" id="cash_given" name="cash_given" />
+        
+                <button type="button" id="submit_btn">Check</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <table id="table">
+        <tr>
+            <th>Number of notes to return</th>
+            <td id="demo1"></td>
+            <td id="demo2"></td>
+            <td id="demo3"></td>
+            <td id="demo4"></td>
+            <td id="demo5"></td>
+            <td id="demo6"></td>
+            <td id="demo7"></td>
+        </tr>
+        <tr>
+            <th>Notes Available</th>
+            <td>1</td>
+            <td>5</td>
+            <td>10</td>
+            <td>20</td>
+            <td>100</td>
+            <td>500</td>
+            <td>2000</td>
+        </tr>
+    </table>
+
+
+    <p id="error"></p>
+
+    <section class="footer">
+        <ul class="footer_list">
+            <li><a href="https://github.com/Akanksha108"><img src="./images/github.png" class="footer_img" /></a></li>
+
+            <li><a href="https://www.linkedin.com/in/akanksha-kawade-434473167"><img src="images/linkedIn.png" class="footer_img" /></a></li>
+
+            <li><a href="https://www.instagram.com/kawade_akanksha17/"><img src="images/insta.png" class="footer_img" /></a></li>
+
+            <li><a href="https://twitter.com/Akanksha_K_17"><img src="images/twitter.png" class="footer_img" /></a></li>
+        </ul>
+    </section>  
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
